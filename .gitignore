@@ -1,0 +1,5 @@
+# ローカル/本番の資格情報は公開しない
+includes/config.php
+
+.DS_Store
+*.log
