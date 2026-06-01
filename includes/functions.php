@@ -15,7 +15,7 @@ function redirect(string $path): never
 }
 
 /** フラッシュメッセージ（次のリクエストで1回だけ表示） */
-function flash(string $msg = null, string $type = 'info')
+function flash(?string $msg = null, string $type = 'info')
 {
     if ($msg !== null) {
         $_SESSION['_flash'][] = ['t' => $type, 'm' => $msg];
